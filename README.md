@@ -16,7 +16,7 @@ Our retail company's sales data is in crisis, preventing accurate business repor
 - 🚫 **Lost Trust**: Management can't rely on data for decisions
 
 ## 💡 Solution
-Built an automated ETL pipeline to:
+Built an ETL pipeline to:
 1. **Extract** raw data from Kaggle retail dataset (286,392 records)
 2. **Transform** by removing duplicates, fixing calculations, normalizing schema
 3. **Load** clean data into PostgreSQL for reliable analytics
