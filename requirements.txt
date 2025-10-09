@@ -1,6 +1,6 @@
 # requirements.txt
 polars==0.20.2
-psycopg2-binary==2.9.7
+psycopg2-binary==2.9.9
 kaggle==1.5.16
 python-dotenv==1.0.0
 
