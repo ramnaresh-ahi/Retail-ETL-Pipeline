@@ -118,12 +118,12 @@ python -m venv retailenv
 source retailenv/bin/activate # Linux/Mac
 retailenv\Scripts\activate # Windows
 ```
-3. **Install dependencies**  
-
+3. **Install dependencies**
+```
 pip install -r requirements.txt
+```
 
-
-4. **Copy `.env.example` to `.env` and fill in credentials**  
+5. **Copy `.env.example` to `.env` and fill in credentials**  
 
 cp .env.example .env
 ```
@@ -175,10 +175,6 @@ python main.py --force-extract
 ### Orchestrator Scope Error
 - **Issue:** `validate_extracted_data` nested inside constructor  
 - **Fix:** Move method out; ensure `extract_results` in scope
-
-### Locked File Rename
-- **Issue:** `EBUSY` error on renaming file  
-- **Fix:** Close editors or use PowerShell to rename
 
 ---
 
