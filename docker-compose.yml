@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: retail_postgres
+    restart: always
+    env_file: .env
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - retail_network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: retail_pgadmin
+    restart: always
+    env_file: .env
+    ports:
+      - "${PGADMIN_PORT}:80"
+    depends_on:
+      - postgres
+    networks:
+      - retail_network
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+networks:
+  retail_network:
+
+volumes:
+  postgres_data:
+  pgadmin_data:

@@ -1,0 +1,62 @@
+{
+  "extraction_timestamp": "2025-10-09T11:20:34.084126",
+  "dataset_slug": "ytgangster/online-sales-in-usa",
+  "download_info": {
+    "success": true,
+    "download_time": 7.4985551834106445,
+    "timestamp": "2025-10-09 11:20:33.286191",
+    "dataset_slug": "ytgangster/online-sales-in-usa"
+  },
+  "validation_results": {
+    "sales.csv": {
+      "exists": true,
+      "size_mb": 84.53,
+      "rows_sample": 10,
+      "columns": 36,
+      "column_names": [
+        "order_id",
+        "order_date",
+        "status",
+        "item_id",
+        "sku",
+        "qty_ordered",
+        "price",
+        "value",
+        "discount_amount",
+        "total",
+        "category",
+        "payment_method",
+        "bi_st",
+        "cust_id",
+        "year",
+        "month",
+        "ref_num",
+        "Name Prefix",
+        "First Name",
+        "Middle Initial",
+        "Last Name",
+        "Gender",
+        "age",
+        "full_name",
+        "E Mail",
+        "Customer Since",
+        "SSN",
+        "Phone No. ",
+        "Place Name",
+        "County",
+        "City",
+        "State",
+        "Zip",
+        "Region",
+        "User Name",
+        "Discount_Percent"
+      ],
+      "file_hash": "724f75850991fe4e48be3917d5438a640521768ee0d4cea130ef5062bc1f75da",
+      "valid": true
+    }
+  },
+  "files_extracted": [
+    "sales.csv"
+  ],
+  "extraction_success": true
+}
