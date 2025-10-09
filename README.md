@@ -199,7 +199,6 @@ python main.py --force-extract
 │   └── backup/ # Backups of raw data
 ├── images/ # Project related images and diagrams
 ├── logs/ # Pipeline logs
-├── results/ # JSON run results
 ├── sql/
 │   └── create_tables.sql
 ├── src/
