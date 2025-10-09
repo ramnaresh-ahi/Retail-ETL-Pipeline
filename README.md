@@ -1,3 +1,4 @@
+<<<<<<< development
 # Retail ETL Pipeline
 
 An end-to-end ETL project demonstrating extraction from Kaggle, transformation with Polars, and loading into PostgreSQL via Docker. Built as a portfolio showcase of modern data engineering best practices.
@@ -217,4 +218,6 @@ python main.py --force-extract
 ## License
 
 MIT License
+=======
+>>>>>>> main
 
