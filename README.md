@@ -113,11 +113,11 @@ cd Retail-ETL-Pipeline.git
 ```
 
 2. **Create and activate virtual environment**  
-
+```
 python -m venv retailenv
 source retailenv/bin/activate # Linux/Mac
 retailenv\Scripts\activate # Windows
-
+```
 3. **Install dependencies**  
 
 pip install -r requirements.txt
@@ -126,30 +126,34 @@ pip install -r requirements.txt
 4. **Copy `.env.example` to `.env` and fill in credentials**  
 
 cp .env.example .env
-
+```
 KAGGLE_USERNAME=<your_username>
 KAGGLE_KEY=<your_key>
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=yourpassword
-
+```
 
 ### Start PostgreSQL Docker container
-
+```
 docker-compose up -d
-
+```
 ---
 
 ## Running the Pipeline
 
-To run end-to-end (extract → transform → load):
+**To run end-to-end (extract → transform → load):**
+```
 python main.py
+```
 
-To force re-download raw data:
+**To force re-download raw data:**
+```
 python main.py --force-extract
+```
 
-On success, expect:
+**On success, expect:**
 { "success": true, "duration": 78.85 }
 
 ---
@@ -191,7 +195,7 @@ On success, expect:
 ---
 
 ## Project Structure
-
+```
 ├── data/
 │   ├── raw/ # Raw sales.csv
 │   ├── processed/ # Transformed CSVs
@@ -211,7 +215,7 @@ On success, expect:
 ├── requirements.txt
 ├── .env.example
 └── README.md
-
+```
 ---
 
 ## License
